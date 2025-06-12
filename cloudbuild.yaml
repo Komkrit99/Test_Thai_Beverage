@@ -3,4 +3,4 @@ options:
 steps:
   - name: 'docker/compose:1.29.2'  # Use a Docker Compose image
     entrypoint: 'docker-compose'
-    args: ['-f', 'docker-compose.yaml', 'up', '--build', '-d']
+    args: ['-f', 'docker-compose.yml', 'up', '--build', '-d']
