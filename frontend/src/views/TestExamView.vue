@@ -116,7 +116,7 @@ const endTime = ref('')
 const examStartTime = ref(null)
 const examEndTime = ref(null)
 
-const API_BASE_URL = process.env.VITE_API_URL
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080'
 
 const fetchQuestions = async () => {
   loading.value = true

@@ -117,8 +117,7 @@ const form = ref({
   option4: '',
   correctAnswer: ''
 })
-
-const API_BASE_URL = process.env.VITE_API_URL
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080'
 
 const saveExam = async () => {
   saving.value = true
