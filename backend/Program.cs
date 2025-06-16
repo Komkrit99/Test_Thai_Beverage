@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.WithOrigins("http://localhost:3000", "http://frontend:3000", "https://test-thai-beverage-580297340291.europe-west1.run.app")
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
