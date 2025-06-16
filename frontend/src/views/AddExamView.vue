@@ -117,8 +117,7 @@ const form = ref({
   option4: '',
   correctAnswer: ''
 })
-console.log("process.env")
-console.log(process.env)
+console.log(import.meta.env)
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080'
 
 const saveExam = async () => {
